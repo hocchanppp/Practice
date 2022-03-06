@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>テンプレート</title>
+<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="../../_common/css/style.css" rel="stylesheet">
+<style>
+    section img {
+        max-width: 100%;
+    }
+    .center {
+        margin: 0 auto 0 auto;
+        max-width: 90%;
+        width: 500px;
+    }
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        flex: 1 1 auto;
+        margin-right: 8px;
+    }
+    li:last-of-type {
+        margin-right: 0;
+    }
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>タイトル</h1>
+<h2>サブタイトル</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+    <div class="center">
+        <div>
+            <img src="../imagesfor5-04/IMG_6330 2.JPG" id="bigimg">
+        </div>
+        <ul>
+            <li><img src="../imagesfor5-04/IMG_6330 2.JPG" class="thumb" data-image="IMG_6330 2.JPG">
+            </li>
+            <li><img src="../imagesfor5-04/IMG_6331 2.JPG" class="thumb" data-image="IMG_6331 2.JPG">
+            </li>
+            <li><img src="../imagesfor5-04/IMG_6332 2.JPG" class="thumb" data-image="IMG_6332 2.JPG">
+            </li>
+            <li><img src="../imagesfor5-04/IMG_6333 2.JPG" class="thumb" data-image="IMG_6333 2.JPG">
+            </li>
+        </ul>
+
+        <div>
+            <img src="../imagesfor5-04/IMG_6334 2.JPG" id="big2">
+        </div>
+        <ul>
+            <li><img src="../imagesfor5-04/IMG_6334 2.JPG" class="thumb2" data-image2="IMG_6334 2.JPG"></li>
+            <li><img src="../imagesfor5-04/IMG_6335 2.JPG" class="thumb2" data-image2="IMG_6335 2.JPG"></li>
+            <li><img src="../imagesfor5-04/IMG_6336 2.JPG" class="thumb2" data-image2="IMG_6336 2.JPG"></li>
+            <li><img src="../imagesfor5-04/IMG_6337 2.JPG" class="thumb2" data-image2="IMG_6337 2.JPG"></li>
+        </ul>
+
+        <div>
+            <img src="../imagesfor5-04/IMG_6341 2.JPG" id="big3">
+        </div>
+        <ul>
+            <li><img src="../imagesfor5-04/IMG_6341 2.JPG" class="thumb3" data-image3="IMG_6338 2.JPG"></li>
+            <li><img src="../imagesfor5-04/IMG_6339 2.JPG" class="thumb3" data-image3="IMG_6339 2.JPG"></li>
+            <li><img src="../imagesfor5-04/IMG_6340 2.JPG" class="thumb3" data-image3="IMG_6340 2.JPG"></li>
+            <li><img src="../imagesfor5-04/IMG_6338 2.JPG" class="thumb3" data-image3="IMG_6341 2.JPG"></li>
+        </ul>
+    </div>
+
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<script>
+    'use strict';
+
+    const thumbs = document.querySelectorAll('.thumb');
+    thumbs.forEach(function(item, index) {
+        item.onclick = function() {
+            document.getElementById('bigimg').src = "../imagesfor5-04/" + this.dataset.image;
+        }
+    });
+
+    const thumbs2 = document.querySelectorAll('.thumb2');
+    thumbs2.forEach(function(item, index) {
+        item.onclick = function() {
+            document.getElementById('big2').src = "../imagesfor5-04/" + this.dataset.image2;
+        }
+    });
+
+    const thumbs3 = document.querySelectorAll('.thumb3');
+    thumbs3.forEach(function(item, index) {
+        item.onclick = function() {
+            document.getElementById('big3').src = "../imagesfor5-04/" + this.dataset.image3;
+        }
+    });     
+
+</script>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+p {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #2C0A00;
+}
+header h1 {
+    margin: 0;
+    padding: 12px;
+}
+
+#mainvisual div {
+    width: 100%;
+    text-align: center;
+}
+#mainvisual div img {
+    max-width: 100%;
+}
+@media (min-width: 768px) {
+    #mainvisual div {
+        background: url(../images/main_bg.png) repeat-x;
+    }
+}
+
+.section_inner {
+    width: 1200px;
+    margin: auto;
+}
+@media (max-width: 767px) {
+    .section_inner {
+        width: 100%;
+        padding: 0 16px;
+        margin: auto;
+    }
+}
+h2 {
+    font-size: 3.2rem;
+    line-height: 1.4em;
+    text-align: center;
+    margin: 60px auto 40px;
+}
+h2::after {
+    display: block;
+    content: "";
+    width: 80px;
+    padding: 0;
+    border-bottom: 8px solid #ED1926;
+    margin: 12px auto 0;
+}
+
+#arasuji .arasuji_box {
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    #arasuji .arasuji_box {
+        display: flex;
+    }
+    #arasuji .arasuji_box p {
+        width: 50%;
+    }
+}
+#arasuji .arasuji_box .txt {
+    padding: 20px;
+    background: url(../images/bg_arasuji.png) no-repeat;
+    border-radius: 8px;
+}
+@media (min-width: 768px) {
+    #arasuji .arasuji_box .img img {
+        border-radius: 8px 0 0 8px;
+    }
+    #arasuji .arasuji_box .txt {
+        border-radius: 0 8px 8px 0;
+    }
+}
+@media (max-width: 767px) {
+    #arasuji .arasuji_box .img img {
+        border-radius: 8px 8px 0 0;
+    }
+    #arasuji .arasuji_box .txt {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+
+#jinbutu ul.character {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#jinbutu ul.character li {
+    max-width: 184px;
+    padding: 0 12px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    #jinbutu ul.character li {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+
+#tatemono .description {
+    margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+    #tatemono .contrast .kokurikosou {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    #tatemono .description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #tatemono .description p {
+        width: 48%;
+    }
+
+    #tatemono .contrast {
+        display: flex;
+        justify-content: space-between;
+    }
+    #tatemono .contrast .contrast_box {
+        width: 49%;
+    }
+}
+
+#tatemono .contrast .contrast_box {
+    border: 4px solid;
+    border-radius: 8px;
+    padding-bottom: 32px;
+}
+#tatemono .contrast .contrast_box h3 {
+    font-size: 2.4rem;
+    line-height: 1.4em;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+}
+#tatemono .contrast .kokurikosou {
+    border-color: #E5C2CB;
+}
+#tatemono .contrast .kokurikosou h3 {
+    background-color: #E5C2CB;
+}
+#tatemono .contrast .quarterlatin {
+    border-color: #C0C5D8;
+}
+#tatemono .contrast .quarterlatin h3 {
+    background-color: #C0C5D8;
+}
+
+#tatemono .contrast .contrast_box p {
+    padding: 0 32px;
+}
+@media (max-width: 767px) {
+    #tatemono .contrast .contrast_box p {
+        padding: 0 16px;
+    }
+}
+
+
+#tatemono .contrast .contrast_box p.img {
+    margin: 20px 0 16px;
+}
+#tatemono .contrast .contrast_box p.img img {
+    border-radius: 4px;
+}
+
+
+
+footer {
+    background-color: #2C0A00;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 60px;
+}

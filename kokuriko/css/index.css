@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #2C0A00;
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 12px;
+}
+
+#mainvisual div {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    #mainvisual div {
+        background: url(../images/main_bg.png) repeat-x;
+    }
+}
+main {
+    margin-top: 52px;
+}
+
+h2 {
+    text-align: center;
+    margin: 60px auto 40px;
+    font-size: 3.2rem;
+    line-height: 1.2em;
+}
+
+h2::after {
+    display: block;
+    content: "";
+    width: 80px;
+    padding: 0;
+    border-bottom: 8px solid #ED1926;
+    margin: 12px auto 0;
+}
+
+section {
+    width: 100%;
+}
+
+.section_inner {
+    margin: auto;
+    max-width: 1200px;
+}
+
+@media (max-width: 767px) {
+    .section_inner {
+        width: 100%;
+        padding: 0 16px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #synopsis .synopsis_content {
+        display: flex;
+    }
+    
+    #synopsis .synopsis_content p {
+        width: 50%;
+    }
+}
+
+#synopsis .synopsis_content .txt {
+    padding: 20px;
+    background: url(../images/bg_arasuji.png) no-repeat;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+   #synopsis .synopsis_content .img img {
+        border-radius: 8px 0 0 8px;
+    }
+    #synosis .synopsis_content .txt{
+        border-radius: 0 8px 8px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #synopsis .synopsis_content .img img {
+        border-radius: 8px 8px 0 0;
+    }
+    #synopsis .synopsis_content .txt{
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+
+#character .character_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#character .character_list li {
+    padding: 0 12px;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    #character .character_list li {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+#buildings .description {
+    margin-bottom: 32px;
+}
+
+@media (min-width:768px) {
+    #buildings .description {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #buildings .description p {
+        width: 48%;
+    }
+
+    #buildings .contrast {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #buildings .contrast .contrast_box {
+        width: 49%;
+    }
+
+}
+
+#buildings .contrast h3 {
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 1.2em;
+    padding: 12px;
+    margin: 0;
+}
+
+#buildings .contrast .contrast_box {
+    border: 4px solid;
+    border-radius: 8px;
+    padding-bottom: 32px;
+}
+
+#buildings .contrast .kokurikosou h3 {
+    background-color: #E5C2CB;
+}
+
+@media (max-width:768px) {
+    #buildings .contrast .kokurikosou {
+        margin-bottom: 24px;
+    }
+}
+
+#buildings .contrast p {
+    padding: 0 32px;
+}
+
+@media (max-width:768px) {
+    #buildings .contrast p {
+        padding: 0 16px;
+    }
+}
+
+#buildings .contrast p img {
+    margin: 20px 0 16px;
+}
+
+#buildings .contrast .quarterlatin  h3{
+    background-color: #C0C5D8;
+}
+
+#buildings .contrast .kokurikosou {
+    border-color: #E5C2CB;
+}
+
+#buildings .contrast .quarterlatin {
+    border-color: #C0C5D8;
+}
+
+#buildings .contrast p img {
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    background-color: #2C0A00;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 0;
+    margin-top: 60px;
+}

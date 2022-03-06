@@ -35,14 +35,18 @@
         margin-right: 0.5rem;
         width: 16px;
         height: 16px;
-        background: url(images/arrow-left.svg) norepeat;
+        background: url(images/arrow-left.svg) no-repeat;
+    }
+
+    #page {
+        color: white;
     }
 
     #next {
         margin-left: 0.5rem;
         width: 16px;
         height: 16px;
-        background: url(images/arrow0-right.svg) no-repeat;
+        background: url(images/arrow-right.svg) no-repeat;
     }
 </style>
 </head>
@@ -58,12 +62,13 @@
 <section>
     <div class="slide">
         <div class="image_box">
-            <img id="main_image" src="../imagesfor5-04/IMG_6330 2.JPG">
+            <img id="main_image" src="images/IMG_6330 2.JPG">
         </div>
 
         <div class="toolbar">
             <div class="nav">
                 <div id="prev"></div>
+                <div id="page"></div>
                 <div id="next"></div>
             </div>
         </div>
@@ -82,8 +87,15 @@
         if(current + num >=0 && current + num < images.length) {
             current += num;
             document.getElementById('main_image').src = images[current];
+            pageNum();
         }
     };
+
+    function pageNum() {
+        document.getElementById('page').textContent = `${current + 1}/${images.length}`;
+    }
+
+    pageNum();
 
     document.getElementById('prev').onclick = function() {
         changeImage(-1);
